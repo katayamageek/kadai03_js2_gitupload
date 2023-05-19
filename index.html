@@ -8,27 +8,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ドラッグ＆ドロップとテーブル</title>
     <!-- linkと入力後tab -->
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="">
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+
 </head>
 
 <body>
     <!-- <div class="demo">
         <div id="droparea" class="droppable"></div> -->
-    <div id="box" class="box-a">プレイリストA</div>
-    <div id="box" class="box-b">プレイリストB</div>
-    <div id="box" class="box-c">プレイリストC</div>
-    <div id="box" class="box-e">プレイリストE</div>
-    <div id="box" class="box-d">プレイリストD</div>
+
 
     <!-- </div> -->
 
-    
 
 
 
-    <table>
+
+    <table class="tbl">
         <tr>
+            <th></th>
             <th>月</th>
             <th>火</th>
             <th>水</th>
@@ -46,20 +46,23 @@
             <td id="droparea"></td>
             <td id="droparea"></td>
             <td id="droparea"></td>
+            <td id="droparea"></td>
         </tr>
 
         <tr>
             <td>10:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
         </tr>
 
         <tr>
             <td>11:00</td>
+            <td id="droparea"></td>
             <td id="droparea"></td>
             <td id="droparea"></td>
             <td id="droparea"></td>
@@ -76,10 +79,12 @@
             <td id="droparea"></td>
             <td id="droparea"></td>
             <td id="droparea"></td>
+            <td id="droparea"></td>
         </tr>
 
         <tr>
             <td>13:00</td>
+            <td id="droparea"></td>
             <td id="droparea"></td>
             <td id="droparea"></td>
             <td id="droparea"></td>
@@ -96,10 +101,12 @@
             <td id="droparea"></td>
             <td id="droparea"></td>
             <td id="droparea"></td>
+            <td id="droparea"></td>
         </tr>
 
         <tr>
             <td>15:00</td>
+            <td id="droparea"></td>
             <td id="droparea"></td>
             <td id="droparea"></td>
             <td id="droparea"></td>
@@ -116,97 +123,214 @@
             <td id="droparea"></td>
             <td id="droparea"></td>
             <td id="droparea"></td>
+            <td id="droparea"></td>
         </tr>
+        <tr>
+            <td>17:00</td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+        </tr>
+        <tr>
+            <td>18:00</td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+        </tr>
+        <tr>
+            <td>19:00</td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+        </tr>
+        <tr>
+            <td>20:00</td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+        </tr>
+        <tr>
+            <td>21:00</td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+        </tr>
+        <tr>
+            <td>22:00</td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+        </tr>
+        <tr>
+            <td>23:00</td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+            <td id="droparea"></td>
+        </tr>
+
+
     </table>
 
     <!-- 以下、アップロード -->
-    <style>
-        .drop-area {
-            border: 3px dashed #C8C8C8 !important;
-            background-color: #F0F0F0 !important;
-            border-radius: 5px;
-            padding: 0px;
-            margin: 0;
-            text-align: center;
-            width: 350px;
-            height: 100px;
-        }
-
-        .drop-area label {
-            width: 100%;
-            display: inline-block;
-        }
-
-        .drop-area label:hover {
-            cursor: pointer;
-        }
-
-        .drop-area label input {
-            display: none;
-        }
-
-        .drop-area label svg {
-            width: 50px;
-            fill: currentColor;
-            color: #909090;
-        }
-
-        .drop-area label .preview-area {
-            width: 75%;
-            margin: 15px auto;
-            height: 200px;
-        }
-
-        .drop-area label .preview-area img {
-            height: 100%;
-            max-width: 100%;
-            width: auto;
-        }
-    </style>
-
-    <div class="drop-area">
-        <label>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                    d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479-1.092l4 4h-3v4h-2v-4h-3l4-4z" />
-            </svg>
-            <input type="file" name="example" accept="image/jpeg, image/png" class="uploader">
-            <div class="preview-area"></div>
-        </label>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(window).on("load", function () {
-            //ドラッグ&ドロップ時の操作
-            $(document).on('drop', '.drop-area', function (event) {
-                $(this).find('.uploader')[0].files = event.originalEvent.dataTransfer.files
-                $(this).find('.uploader').trigger('change')
-            })
-
-            //ドロップエリア以外のドロップ禁止
-            $(document).on('dragenter dragover drop', function (event) {
-                event.stopPropagation()
-                event.preventDefault()
-            })
-
-            //ファイルがアップロードされたらプレビューエリアに表示
-            $(document).on('change', '.drop-area .uploader', function (e) {
-                let thiss = $(this)
-                let fileReader = new FileReader()
-                fileReader.onload = (function () {
-                    let imgTag = `<img src='${fileReader.result}'>`
-                    thiss.closest(".drop-area").find(".preview-area").html(imgTag)
-                })
-                fileReader.readAsDataURL(e.target.files[0])
-            })
-        })
-    </script>
 
 
 
-    <!-- script src=""でjsを紐づける -->
-    <script src="js/script.js"></script>
+
+
+
+    <!-- ドラッグアンドドロップで並べ替え -->
+    <!-- https://www.ritolab.com/posts/114 -->
+
+
+    <div class="container">
+        <div class="lists_wrap">
+            <div class="playlist1">
+                <ul class="list" id="list1">
+                    <p>プレイリスト1</p>
+                    <div>
+                        <input type="text" class="text1" id="idtext1" value="プレイリスト1">
+                        <input type="button" class="button1" class="" value="Go">
+                    </div>
+                    <p class="dropzone">＋</p>
+                    <!-- <li class="a">AAA1</li>
+                    <li class="a">AAA2</li>
+                    <li class="a">AAA3</li>
+                    <li class="a">AAA4</li>
+                    <li class="a">AAA5</li> -->
+            </div>
+            <div class="playlist2">
+                <ul class="list" id="list2">
+                    <p>プレイリスト2</p>
+                    <div>
+                        <input type="text" class="text2" id="idtext2" value="プレイリスト2">
+                        <input type="button" class="button2" class="" value="Go">
+                    </div>
+                    <p class="dropzone">＋</p>
+                    <!-- <li class="b">BBB1</li>
+                    <li class="b">BBB2</li>
+                    <li class="b">BBB3</li>
+                    <li class="b">BBB4</li>
+                    <li class="b">BBB5</li> -->
+                </ul>
+            </div>
+            <div class="playlist3">
+                <ul class="list" id="list3">
+                    <p>プレイリスト3</p>
+                    <div>
+                        <input type="text" class="text3" id="idtext3" value="プレイリスト3">
+                        <input type="button" class="button3" class="" value="Go">
+                    </div>
+                    <p class="dropzone">＋</p>
+                    <!-- <li class="b">3-1</li>
+                    <li class="b">3-2</li>
+                    <li class="b">3-3</li>
+                    <li class="b">3-4</li>
+                    <li class="b">3-5</li> -->
+                </ul>
+            </div>
+            <div class="playlist4">
+                <ul class="list" id="list4">
+                    <p>プレイリスト4</p>
+                    <div>
+                        <input type="text" class="text4" id="idtext4" value="プレイリスト4">
+                        <input type="button" class="button4" class="" value="Go">
+                    </div>
+                    <p class="dropzone">＋</p>
+                    <!-- <li class="b">4-1</li>
+                    <li class="b">4-2</li>
+                    <li class="b">4-3</li>
+                    <li class="b">4-4</li>
+                    <li class="b">4-5</li> -->
+                </ul>
+            </div>
+            <div class="playlist5">
+                <ul class="list" id="list5">
+                    <p>プレイリスト5</p>
+                    <div class="playlistform">
+                        <input type="text" class="text5" id="idtext5" value="プレイリスト5">
+                        <input type="button" class="button5" class="" value="Go">
+                    </div>
+                    <p class="dropzone">＋</p>
+                    <!-- <li class="b">5-1</li>
+                    <li class="b">5-2</li>
+                    <li class="b">5-3</li>
+                    <li class="b">5-4</li>
+                    <li class="b">5-5</li> -->
+                </ul>
+            </div>
+
+
+            <div class="library">
+                <ul class="list" id="list0">
+                    <p class=library-title>ライブラリー</p>
+                    <li class="c">パーソナルトレーナーの紹介</li>
+                    <li class="c">友達紹介特典</li>
+                    <li class="c">広告枠:A社プロテイン</li>
+                    <li class="c">広告枠:B社脂肪燃焼お茶</li>
+                    <li class="c">広告枠:近所の整体院</li>
+                    <li class="c">広告枠:新刊ビジネス本のCM</li>
+                    <li class="c">広告枠:主婦向けスーパーのお買い得情報</li>
+                    <li class="c">広告枠:シニア向けプログラミングスクール</li>
+                    <li class="c">広告枠:週末のクラフトビールフェス情報</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="dragarea">
+            <lu>
+                <div id="box" class="box-a" id="box-a"></div>
+                <div id="box" class="box-b"></div>
+                <div id="box" class="box-c"></div>
+                <div id="box" class="box-e"></div>
+                <div id="box" class="box-d"></div>
+            </lu>
+        </div>
+
+
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+        <!-- jQueryが上 -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <!-- script src=""でSortableを紐づける -->
+        <script src="js/Sortable.min.js"></script>
+        <script>new Sortable(document.getElementById('my-list'));
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- script src=""でjsを紐づける -->
+        <script src="js/script.js"></script>
 </body>
 
 </html>
