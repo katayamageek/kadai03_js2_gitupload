@@ -24,7 +24,7 @@
   width: 160px;
   height: 30px;
   position: absolute;
-  top: 10%;
+  top: 5%;
   right: 3%;
   /* スクロールしても固定表示 */
   position: fixed;
@@ -37,7 +37,7 @@
   width: 160px;
   height: 30px;
   position: absolute;
-  top: 15%;
+  top: 10%;
   right: 3%;
   /* スクロールしても固定表示 */
   position: fixed;
@@ -50,7 +50,7 @@
   width: 160px;
   height: 30px;
   position: absolute;
-  top: 20%;
+  top: 15%;
   right: 3%;
   /* スクロールしても固定表示 */
   position: fixed;
@@ -63,7 +63,7 @@
   width: 160px;
   height: 30px;
   position: absolute;
-  top: 25%;
+  top: 20%;
   right: 3%;
   /* スクロールしても固定表示 */
   position: fixed;
@@ -76,7 +76,7 @@
   width: 160px;
   height: 30px;
   position: absolute;
-  top: 30%;
+  top: 25%;
   right: 3%;
   /* スクロールしても固定表示 */
   position: fixed;
@@ -184,10 +184,10 @@ th {
   padding-bottom: 40px;
 
   /* 右端にグロナビ固定 */
-  width: 220px;
+  width: 320px;
   /* height: 550px; */
   position: absolute;
-  top: 40%;
+  top: 30%;
   right: 3%;
   /* スクロールしても固定表示 */
   position: fixed;
@@ -195,6 +195,8 @@ th {
 
 .library-title {
   font-size: 25px;
+  margin-top: 0%;
+  margin-bottom: 3%;
 }
 
 .text1,
